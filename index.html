@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>M-rent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="css/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/favicon/favicon-16x16.png">
+    <link rel="manifest" href="css/favicon/site.webmanifest">
+    <link rel="mask-icon" href="css/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+  </head>
+
+  <body>
+        <!--CSS Spinner-->
+        <!--<div class="spinner-wrapper">-->
+        <!--    <div class="spinner">-->
+        <!--      <div class="bounce1"></div>-->
+        <!--      <div class="bounce2"></div>-->
+        <!--      <div class="bounce3"></div>-->
+        <!--    </div>-->
+        <!--</div>-->
+
+    <main class="container">
+
+      <header>
+
+        <nav class="desktop-navigation-wrapper">
+          <figure class="logo-wrapper"><a href="index.html"><img src="images/mrent-logo.png" alt="M-rent Logo"></a></figure>
+
+          <ul class="navigation-links">
+            <li><a href="index.html" class="active-desktop-link">Home</a></li>
+            <li><a href="#how-mrent-works" class="smooth-scroll">How it works</a></li>
+            <li><a href="how-it-works.html">About us</a></li>
+            <li><a href="property-listings.html">Property listings</a></li>
+          </ul>
+
+          <div class="accounts-wrapper">
+
+            <div class="login-account">
+              <select name="forma" onchange="location = this.value;">
+                    <option data-display="Login">Login</option>
+                    <option value="login.html">Agent</option>
+                    <option value="login.html">Landlord</option>
+                    <option value="login.html">Tenant</option>
+               </select>
+            </div>
+            <div class="create-account">
+              <a href="create-account.html">Create Account</a>
+            </div>
+
+          </div>
+
+        </nav>
+
+        <nav class="mobile-navigation-wrapper">
+
+          <div class="visible-mobile">
+
+            <div class="accounts-wrapper">
+
+            <div class="login-account">
+              <select name="forma" onchange="location = this.value;">
+                    <option data-display="Login">Login</option>
+                    <option value="login.html">Agent</option>
+                    <option value="login.html">Landlord</option>
+                    <option value="login.html">Tenant</option>
+               </select>
+            </div>
+            <div class="create-account">
+              <a href="create-account.html">Create Account</a>
+            </div>
+
+          </div>
+
+            <div class="mobile-logo-wrapper"><a href="index.html"><img src="images/mrent-logo.png"></a></div>
+
+            <div class="menu-icon">
+
+              <input type="checkbox" id="toggle" />
+              <label for="toggle">
+                  <i id="bars" class="mobile-menu-icon fa fa-bars fa-fw"></i>
+                  <i id="cross" class="mobile-menu-icon fa fa-times fa-fw"></i>
+              </label>
+
+            </div>
+
+          </div>
+
+          <div class="hidden-mobile">
+
+            <ul>
+              <li><a href="index.html" class="active-mobile-link">Home</a></li>
+            <li><a href="#how-mrent-works" class="smooth-scroll">How it works</a></li>
+            <li><a href="how-it-works.html">About us</a></li>
+            <li><a href="property-listings.html">Property listings</a></li>
+            </ul>
+
+          </div>
+
+        </nav>
+
+      </header>
+
+      <article class="home-page-wrapper">
+
+        <section>
+
+          <div class="home-banner clr">
+
+            <div class="banner-wrapper">
+              <img src="images/listings-banner.png" alt="M-rent Banner">
+
+              <div class="banner-caption">
+                  <div class="">
+                    <p>Manage your properties with <span class="different-font">M-rent.</span> Have less stress and more time to <span>enjoy</span> the <span>rental passive income.</span></p>
+
+                    <a href="#">Get Started</a>
+                  </div>
+
+                <div class="banner-caption-form">
+
+
+                  <div class="form-caption-details-wrapper">
+                      <!--
+                    <ul class="home-caption-links">
+                      <li><a href="property-listings.html">Commercial</a></li>
+                      <li><a href="property-listings.html">Apartment</a></li>
+                      <li><a href="property-listings.html">Bangalow</a></li>
+                      <li><a href="property-listings.html">Studio Apartments</a></li>
+                      <li><a href="property-listings.html">Massionette</a></li>
+                    </ul> -->
+
+                    <div class="home-caption-search">
+                      <h3>Find your property</h3>
+                      <form class="" action="index.html" method="post">
+                        <div class="third-input-account">
+
+                          <select>
+                               <option data-display="Select Status">Select Status</option>
+                               <option value="1">For Sale</option>
+                               <option value="2">For rent</option>
+                           </select>
+
+                        </div>
+                        <div class="third-input-account">
+                          <input type="search" name="search" value="" placeholder="Search by city or location">
+
+                        </div>
+                        <div class="third-input-account">
+
+                          <select>
+                               <option data-display="Category">Category</option>
+                               <option value="3">Townhouse</option>
+                               <option value="4">Apartments</option>
+                               <option value="5">Land</option>
+                           </select>
+
+                        </div>
+                        <div class="third-input-account">
+                          <input type="text" name="" value="" placeholder="Number of Bedrooms">
+                        </div>
+                        <div class="third-input-account">
+                          <input type="text" name="" value="" placeholder="Number of Bathrooms">
+                        </div>
+                        <div class="third-input-account">
+                          <button type="submit" name="button">Search</button>
+                        </div>
+                      </form>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+          <div class="key-benefits-wrapper clr">
+
+            <h2>Key benefits</h2>
+            <ul>
+              <li>
+                <img src="images/benefit1.png" alt="Key Benefits">
+                <h3>Real-time update on payment</h3>
+                <p>Real-time update when tenant make rent payment</p>
+              </li>
+              <li>
+                <img src="images/benefit2.png" alt="Key Benefits">
+                <h3>Complete view of payments status</h3>
+                <p>Get complete view of payments status on all your rental properties</p>
+              </li>
+              <li>
+                <img src="images/benefit3.png" alt="Key Benefits">
+                <h3>Save time & resources used to reconcile payments</h3>
+                <p>Save time and resources used to reconcile payments M-rent automate the receipting and reconciling</p>
+              </li>
+              <li>
+                <img src="images/benefit4.png" alt="Key Benefits">
+                <h3>Eliminate errors in payment</h3>
+                <p>Eliminate errors in payment get a trace of where each cent was sent and who is behind in payment</p>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="how-mrent-works clr" id="how-mrent-works">
+            <h2>How it works</h2>
+            <div class="slider">
+              <div>
+                <img src="images/slider_banner_1.jpg">
+                <div class="slider-copy">
+                  <div class="work-numbered">
+                    <h1>1</h1>
+
+                  </div>
+                  <div class="works-details">
+
+                      <img src="images/works-icon1.png" alt="How M-Rent Works">
+                      <h4>Create a tenant, landload or agent profile</h4>
+                      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p> -->
+                  </div>
+                </div>
+              </div>
+              <div><img src="images/slider_banner_2.jpg">
+                <div class="slider-copy">
+                  <div class="work-numbered">
+                    <h1>2</h1>
+
+                  </div>
+                  <div class="works-details">
+                      <img src="images/works-icon2.png" alt="How M-Rent Works">
+                      <h4>Submit your tenant, landload or agent details</h4>
+                      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p> -->
+                  </div>
+                </div>
+              </div>
+              <div><img src="images/slider_banner_3.jpg">
+                <div class="slider-copy">
+                  <div class="work-numbered">
+                    <h1>3</h1>
+
+                  </div>
+                  <div class="works-details">
+                      <img src="images/works-icon2.png" alt="How M-Rent Works">
+                      <h4>Get a response within  24 business hours</h4>
+                      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p> -->
+                  </div>
+                </div>
+              </div>
+              <div><img src="images/slider_banner_2.jpg">
+                <div class="slider-copy">
+                  <div class="work-numbered">
+                    <h1>4</h1>
+
+                  </div>
+                  <div class="works-details">
+                      <img src="images/works-icon2.png" alt="How M-Rent Works">
+                      <h4>Upload your property</h4>
+                      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p> -->
+                  </div>
+                </div>
+              </div>
+              <div><img src="images/slider_banner_3.jpg">
+                <div class="slider-copy">
+                  <div class="work-numbered">
+                    <h1>5</h1>
+
+                  </div>
+                  <div class="works-details">
+                      <img src="images/works-icon3.png" alt="How M-Rent Works">
+                      <h4>Make your monthly payments</h4>
+                      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+          <div class="property-lists clr">
+
+            <h2>Property Listings</h2><a href="property-listings.html" class="home-property">View all</a>
+
+            <ul id="owl-demo" class="owl-carousel">
+
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+                <li class="item">
+                  <img src="images/listing1.jpg">
+                      <div class="listing-content">
+                        <a href="single-property-listing.html">
+                          <div class="post-center">
+                              <h6>Ksh</h6>
+                              <h1>30,000</h1>
+                              <h6>Per month</h6>
+                              <h3>Avocado Apartments</h3>
+                              <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                              </span>
+                              <div class="property-qualities">
+                                <div class="quality-columns"><span><i class="fa fa-bed" aria-hidden="true"></i><p>Bedrooms:3</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-bath" aria-hidden="true"></i><p>Baths:2</p></span></div>
+                                <div class="quality-columns"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i><p>Size:50,000 sqft</p></span></div>
+                              </div>
+
+                            </div>
+                          </a>
+
+                          <div class="share-listings-wrapper">
+
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>Share with friends</p>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+
+                          </div>
+                      </div>
+                </li>
+
+              </ul>
+
+          </div>
+
+        </section>
+
+      </article>
+
+      <footer>
+
+        <nav class="footer-navigation-wrapper">
+
+          <div class="footer-links-wrapper">
+
+            <ul>
+              <h3>Properties</h3>
+              <li><a href="property-listings.html">Commercial</a></li>
+              <li><a href="property-listings.html">Apartment</a></li>
+              <li><a href="property-listings.html">Bangalow</a></li>
+              <li><a href="property-listings.html">Studio Apartments</a></li>
+              <li><a href="property-listings.html">Massionette</a></li>
+            </ul>
+
+            <ul>
+              <h3>Solutions</h3>
+              <li><a href="solutions.html">Rent Collection</a></li>
+              <li><a href="solutions.html">Rent Payment</a></li>
+              <li><a href="solutions.html">Property Management</a></li>
+              <li><a href="solutions.html">Property Listing</a></li>
+            </ul>
+
+            <ul class="last-lists">
+              <h3>User Links</h3>
+              <li><a href="#">Tenant Login</a></li>
+              <li><a href="#">Agent/Landlord Login</a></li>
+              <li><a href="create-account.html">Create account</a></li>
+            </ul>
+
+          </div>
+
+          <div class="bottom-footer-wrapper">
+            <div class="copyright">
+
+              <p>&copy; 2019 - All rights reserved. M-Rent</p>
+
+            </div>
+
+            <div class="bottom-footer-links">
+
+              <ul>
+                <!-- <li><a href="#">Careers</a></li> -->
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+              </ul>
+
+            </div>
+            
+            <div class="partners-wrapper">
+              <h2>Partners</h2>
+              <ul>
+                  <li><img src="images/nic.png"></li>
+                  <li><img src="images/onetouchlogo.png"></li>
+              </ul>
+          </div>
+
+            <div class="footer-social">
+
+              <ul>
+                <li><a href="#" target="_blank" class="fa fa-facebook"></a></li>
+                <li><a href="#" target="_blank" class="fa fa-twitter"></a></li>
+                <li><a href="#" target="_blank" class="fa fa-youtube"></a></li>
+                <li><a href="#" target="_blank" class="fa fa-linkedin"></a></li>
+              </ul>
+
+            </div>
+          </div>
+
+        </nav>
+
+      </footer>
+
+    </main>
+    
+    
+    
+  <!-- <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="js/jquery.nice-select.js"></script>
+   <script src="js/owl.carousel.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script>
+      $(document).ready(function(){
+
+      });
+  </script>
+//   <script>
+//         $(document).ready(function() {
+//         //Preloader
+//         $(window).on("load", function() {
+//         preloaderFadeOutTime = 500;
+//         function hidePreloader() {
+//         var preloader = $('.spinner-wrapper');
+//         preloader.fadeOut(preloaderFadeOutTime);
+//         }
+//         hidePreloader();
+//         });
+//         });
+//     </script>
+
+  </body>
+
+</html>
